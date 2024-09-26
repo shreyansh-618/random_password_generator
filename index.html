@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+
+      <div class="password-display">
+        <input type="text" id="password" readonly />
+        <button id="copyBtn"><i class="bx bx-copy"></i></button>
+      </div>
+
+      <div class="options">
+        <label><input type="checkbox" id="uppercase" /> Uppercase</label>
+        <label
+          ><input type="checkbox" id="lowercase" checked /> Lowercase</label
+        >
+        <label><input type="checkbox" id="numbers" /> Numbers</label>
+        <label><input type="checkbox" id="symbols" /> Symbols</label>
+      </div>
+
+      <div class="length-option">
+        <label for="lengthRange"
+          >Password Length: <span id="lengthValue">12</span></label
+        >
+        <input type="range" id="lengthRange" min="6" max="20" value="12" />
+      </div>
+
+      <button id="generateBtn">Generate Password</button>
+      <button id="darkModeToggle"><i class="bx bx-moon"></i> Dark Mode</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
