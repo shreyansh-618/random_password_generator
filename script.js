@@ -1,4 +1,3 @@
-// DOM Elements
 const passwordDisplay = document.getElementById("password");
 const generateBtn = document.getElementById("generateBtn");
 const copyBtn = document.getElementById("copyBtn");
